@@ -1,0 +1,7 @@
+//float f[2];
+int main() {
+float f[] = {1.2, 3.4};
+//putFloatLn(f[0]);
+//putFloatLn(f[1]);
+//return 0;
+}

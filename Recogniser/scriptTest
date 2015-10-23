@@ -1,0 +1,7 @@
+#! /bin/bash
+for i in `ls *.vc` 
+do
+	echo $i:
+	b=`basename $i .vc`
+	java VC.vc $i > $b.sol
+done

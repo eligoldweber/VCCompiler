@@ -1,0 +1,10 @@
+ 
+int main(){
+
+
+ boolean ar[] = {true,false,true};
+ boolean a;
+ a = ar[2];
+
+
+}

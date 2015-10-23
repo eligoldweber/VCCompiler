@@ -1,0 +1,12 @@
+int main() {
+int i = 1;
+putIntLn(i);
+for (;;) {
+  if (i <= 10) break;
+  putIntLn(1);
+  putString(" ");
+  i = i + 1;
+}
+//putLn();
+return 0;
+}

@@ -1,0 +1,9 @@
+Program
+  DeclList
+    GloablVarDecl
+      ArrayType
+        void
+        IntExpr
+          10
+      arr
+    EmptyDeclList

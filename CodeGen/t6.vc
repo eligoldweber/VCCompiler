@@ -1,0 +1,14 @@
+
+int main(){
+
+
+ int ar[10];
+ int i;
+
+ for(i = 0; i<11; i = i +1){
+
+ ar[i] = i;
+
+} 
+
+}

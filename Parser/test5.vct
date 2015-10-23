@@ -1,0 +1,9 @@
+Program
+  DeclList
+    GloablVarDecl
+      int
+      i
+      =
+      IntExpr
+        1
+    EmptyDeclList

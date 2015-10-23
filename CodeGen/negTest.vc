@@ -1,0 +1,25 @@
+
+
+
+
+   float temp(){
+    float c;
+    c = -5.2;
+    return c;
+  }
+
+int main(){
+ int x;
+ int y;
+ int z;
+
+
+ y = 5;
+ x = -42;
+ z = x + y;
+ 
+ if(z == -42){
+ z = 0;
+}
+//ireturn -5;
+}

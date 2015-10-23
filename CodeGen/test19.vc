@@ -1,0 +1,7 @@
+int main() {
+int a[] = {1, 0};
+int i;
+i = a[a[0] - 1 + a[a[1 * a[0]]]];
+//putIntLn(i);
+return 0;
+}

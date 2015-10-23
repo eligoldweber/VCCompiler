@@ -1,0 +1,26 @@
+int r;
+void v;
+int f() { }
+boolean f;
+int f(int i, float r, int i, void k[]) {
+  int r; // the previous decl is "float r"
+  !1;
+  1 + 2 = r;
+  i = false;
+  2 + true;
+  return 1.1;
+}
+
+void main() {
+  a(8);	 
+  f(1);
+  f();
+  f(1.0, 2, 3, 4, 5);
+  break;
+while(true){
+  continue;
+}
+}
+int x;
+int x;
+

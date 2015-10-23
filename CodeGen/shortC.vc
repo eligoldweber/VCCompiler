@@ -1,0 +1,7 @@
+int main(){
+int a = 100; boolean b = true; boolean c = true; boolean d = true;
+if(b && c && d) 
+    a = 500; 
+else 
+    a = 150;
+}

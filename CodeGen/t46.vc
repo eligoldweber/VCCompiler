@@ -1,0 +1,10 @@
+int main() {
+boolean b;
+int i = 1;
+for (; i == 1 ;) {
+  putStringLn("one iteraton only ");
+  i = 0;
+}
+return 0;
+}
+

@@ -1,0 +1,11 @@
+
+int main(){
+ int x;
+ float y;
+ float z;
+
+ x = 3;
+ y = 3.2;
+ z = x+y;
+
+}

@@ -1,0 +1,126 @@
+86,95d85
+<     Frame frame = new Frame(false);
+< 
+<     list = ast.FL;
+<     while (!list.isEmpty()) {
+<       DeclList dlAST = (DeclList) list;
+<       if (dlAST.D instanceof GlobalVarDecl) {
+<         dlAST.D.visit(this, frame);
+<       }
+<       list = dlAST.DL;
+<     }
+99c89
+<     //Frame frame = new Frame(false);
+---
+>     Frame frame = new Frame(false);
+143,157c133
+<     
+<     
+<       list = ast.FL;
+<     while (!list.isEmpty()) {
+<       DeclList dlAST = (DeclList) list;
+<       if (dlAST.D instanceof GlobalVarDecl) {
+<        list = dlAST.DL;
+<       }else{
+<        break; 
+<       }
+<       
+<     }
+<     //return ast.FL.visit(this, o);
+<     return list.visit(this,o);
+<     
+---
+>     return ast.FL.visit(this, o);
+610,620d585
+<         if(op.equals("f+") || op.equals("i+")){
+<           if(ast.E instanceof IntExpr){
+<             IntExpr temp = (IntExpr) ast.E;
+<             emitICONST(Integer.parseInt(temp.IL.spelling));
+<           }
+<           if(ast.E instanceof FloatExpr){
+<             FloatExpr temp = (FloatExpr) ast.E;
+<             emitFCONST(Float.parseFloat(temp.FL.spelling));
+<           }
+<           
+<         }
+971c936
+<       ArrayExpr array = (ArrayExpr) ast.E2;
+---
+>       ArrayExpr array = (ArrayExpr) ast.E1;
+1063c1028
+<     System.out.println("Assign : "+ast.E1 + " " + ast.E2);
+---
+>     //System.out.println("Assign : "+ast.E1 + " " + ast.E2);
+1088,1091d1052
+< //    else if(!(ast.E2 instanceof BinaryExpr)|| !(ast.E2 instanceof BooleanExpr)){
+< //      emit(JVM.DUP);
+< //    }
+< //    
+1125,1127d1085
+<      else{
+<        emit(JVM.DUP);
+<     }
+1228,1242d1185
+<         String T = VCtoJavaType(ast.T);
+<       if(ast.T instanceof ArrayType){
+<         if( !(ast.E instanceof InitExpr)){
+<           ast.T.visit(this,o);
+<           if (ast.index >= 0 && ast.index <= 3) {
+<             emit(JVM.ASTORE + "_" + ast.index);
+<           }else{
+<             emit(JVM.ASTORE); 
+<           }
+<           
+<           
+<         }else{
+<           ast.T.visit(this,o);
+<         }
+<     }
+1272c1215
+<       ast.E.visit(this, o);///dsfa/sdfa/sdf
+---
+>       ast.E.visit(this, o);
+1274,1293d1216
+<       if(ast.E instanceof VarExpr){
+<       VarExpr temp1 = (VarExpr) ast.E;
+<         if(temp1.type instanceof FloatType){
+<           emitFLOAD(indeX);
+<         }else{
+<       emitILOAD(indeX);
+<         }
+<     }else if (ast.E instanceof ArrayExpr){
+<       //System.out.println(ast.E2);
+<       ArrayExpr array = (ArrayExpr) ast.E;
+<       if(array.type instanceof FloatType){
+<          emit(JVM.FALOAD);
+<       }else if (array.type instanceof BooleanType){
+<          emit(JVM.BALOAD);
+<       }else{
+<         emit(JVM.IALOAD);
+<       }
+<       
+<     }
+<       
+1302,1314c1225
+<       } else if(ast.T instanceof ArrayType){
+<         //emit(JVM.ASTORE + "_" + ast.index);
+<            if (ast.index >= 0 && ast.index <= 3) {
+<           emit(JVM.ASTORE + "_" + ast.index); 
+< 
+<         }
+<            else{
+<           emit(JVM.ASTORE, ast.index); 
+<          emit(JVM.NOP);
+<            }
+<         frame.pop();
+<         
+<       }else {
+---
+>       } else {
+1374,1377d1284
+<       VarExpr temp1 = (VarExpr) ast.E;
+<         if(temp1.type instanceof FloatType){
+<           emitFLOAD(indeX);
+<         }else{
+1379d1285
+<         }

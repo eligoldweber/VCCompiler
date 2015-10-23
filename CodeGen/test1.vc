@@ -1,0 +1,8 @@
+int i = 100; 
+boolean b[] = { true, false};
+int main() {
+putIntLn(i);
+putBoolLn(b[0]);
+putBoolLn(b[1]);
+return 0;
+}

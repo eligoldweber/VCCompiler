@@ -1,0 +1,9 @@
+int i;
+void f()
+{
+}
+void f()
+{
+  int x;
+  int y;
+}

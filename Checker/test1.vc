@@ -1,0 +1,10 @@
+void main(){
+int i = 5;
+i  = 6;
+}
+int f() { void r; 
+ int d;
+ d = 5;
+ d = t + x;
+ 
+ }

@@ -1,0 +1,27 @@
+boolean isFirstBigger(int list[]){
+
+    boolean temp;
+   // temp = true;
+      int a;
+      int b;
+      temp = true;
+      a = list[0];
+      b = list[1];
+
+      if(a > b){
+        ;
+      }else{
+        temp = false;
+      }
+
+    return temp;
+
+
+}
+
+int main(){
+
+ int list[] = {5,1,2,3,4,1,2,3};
+ boolean eli;
+ eli = isFirstBigger(list);
+}
